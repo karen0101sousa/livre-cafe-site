@@ -1,0 +1,468 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: #f4efe6;
+  color: #3c302b;
+  font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  background-color: #f4efe6;
+}
+
+.logo {
+  color: #3c302b;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #b86f52;
+}
+
+.navigation {
+  display: flex;
+  gap: 28px;
+}
+
+.navigation a {
+  color: #3c302b;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #b86f52;
+}
+
+/* SEÇÃO PRINCIPAL */
+
+.hero {
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 56px;
+  padding: 60px 8%;
+  background-color: #e8ded0;
+}
+
+.hero-content {
+  max-width: 580px;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.eyebrow {
+  color: #87927a;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 20px 0;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.hero p,
+.section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 24px;
+  background-color: #96563f;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #78442f;
+}
+
+/* SEÇÕES GERAIS */
+
+.section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+/* NOSSA ESSÊNCIA */
+
+.about-section {
+  background-color: #f4efe6;
+}
+
+.about-section h2 {
+  max-width: 650px;
+  margin: 16px auto 24px;
+}
+
+.about-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.about-content p {
+  color: #66564e;
+  line-height: 1.8;
+}
+
+/* CARDÁPIO */
+
+.menu-section {
+  background-color: #e8ded0;
+}
+
+.menu-description {
+  color: #66564e;
+  margin-bottom: 40px;
+}
+
+.category-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.category-filters button {
+  padding: 10px 22px;
+  border: 1px solid #b86f52;
+  border-radius: 24px;
+  background-color: transparent;
+  color: #3c302b;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-filters button:hover,
+.category-filters button.active {
+  background-color: #6c3d32;
+  color: #ffffff;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(60, 48, 43, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(60, 48, 43, 0.12);
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.menu-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px;
+}
+
+/* DETALHES DOS PRODUTOS */
+
+.product-details {
+  margin-top: 18px;
+}
+
+.product-details h4 {
+  margin: 0 0 8px;
+  color: #3c302b;
+  font-size: 0.9rem;
+}
+
+.product-details ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #66564e;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.dietary-label {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 16px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background-color: #edf0e8;
+  color: #46543c;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.allergen-info {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #f8f5ef;
+  border-left: 3px solid #b86f52;
+  border-radius: 4px;
+}
+
+.allergen-info strong {
+  color: #3c302b;
+  font-size: 0.8rem;
+}
+
+.allergen-info p {
+  margin: 6px 0 0;
+  color: #66564e;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.product-category {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 12px;
+  padding: 5px 10px;
+  color: #58664f;
+  background-color: #edf0e8;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-card h3 {
+  margin: 0 0 10px;
+  color: #3c302b;
+  font-size: 1.15rem;
+}
+
+.menu-card p {
+  color: #66564e;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.price {
+  display: block;
+  margin-top: auto;
+  padding-top: 18px;
+  color: #b86f52;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    min-height: 400px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-image img {
+    height: 320px;
+    border-radius: 12px;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ACESSIBILIDADE: MOVIMENTOS REDUZIDOS */
+
+@media (prefers-reduced-motion: reduce) {
+  .navigation a,
+  .button,
+  .menu-card {
+    transition: none;
+  }
+
+  .menu-card:hover {
+    transform: none;
+  }
+}
+
+/* SEÇÃO DE VISITA */
+
+.visit-section {
+  background-color: #f4efe6;
+}
+
+.visit-section h2 {
+  max-width: 650px;
+  margin: 16px auto;
+}
+
+.visit-description {
+  max-width: 650px;
+  margin: 0 auto 40px;
+  color: #66564e;
+}
+
+.visit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.visit-card {
+  padding: 30px 22px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(60, 48, 43, 0.06);
+}
+
+.visit-card h3 {
+  margin-top: 0;
+  color: #b86f52;
+}
+
+.visit-card p {
+  color: #3c302b;
+  font-weight: bold;
+}
+
+.visit-card span {
+  color: #66564e;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .visit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* RODAPÉ */
+
+.footer {
+  background-color: #3c302b;
+  color: #f4efe6;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 45px 8%;
+  text-align: center;
+}
+
+.footer .logo {
+  color: #f4efe6;
+}
+
+.footer-content p {
+  margin: 0;
+  color: #d8cfc5;
+}
+
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-navigation a {
+  color: #f4efe6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-navigation a:hover {
+  color: #d49a7e;
+}
+
+.footer-bottom {
+  padding: 18px 8%;
+  border-top: 1px solid rgba(244, 239, 230, 0.2);
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #d8cfc5;
+  font-size: 0.8rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-navigation a {
+    transition: none;
+  }
+}
